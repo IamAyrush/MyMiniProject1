@@ -25,7 +25,7 @@ document.addEventListener('keypress',function(){
     btn.classList.add('flash');
     setTimeout(()=>{
         btn.classList.remove('flash');
-    },250);
+    },500);
 }
 
 function userFlash(btn){
@@ -50,7 +50,7 @@ function levelUp(){
 function checkAns(idx){
     if (userSeq[idx]==gameSeq[idx]){
         if(userSeq.length == gameSeq.length){
-           setTimeout(levelUp(), 1000);
+           setTimeout(levelUp(), 1500);
         }
     }
     else{
